@@ -7,7 +7,7 @@ function NavBar() {
   const navigate = useNavigate()
 
   return (
-    <div className="relative w-full h-[550px] max-sm:h-[400px] overflow-hidden rounded-lg">
+    <div className="relative w-full h-[550px] max-sm:h-[400px] overflow-hidden ">
       
       <div
         style={{ backgroundImage: `url(${Bgimage})` }}
