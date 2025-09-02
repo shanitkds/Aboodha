@@ -61,7 +61,7 @@ function ProductCart() {
                 </div>
                 <div className='flex flex-wrap ml-6 sm:ml-75 absolute pt-16' >
                     {filterProduct.map((prod) => (
-                        <div className='w-70 p-4 ' onClick={()=>navigation(`/ProductInfoPage/${prod.id}`)}>
+                        <div className='w-40 sm:w-70 p-4 ' onClick={()=>navigation(`/ProductInfoPage/${prod.id}`)}>
                             <div>
                                 <img src={prod.img} alt="" />
                             </div>
