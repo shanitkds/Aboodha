@@ -9,10 +9,10 @@ import wedding from '../../../public/WEDDING.png'
 
 function OpenPage() {
   return (
-    <div className=" py-6">
+    <div className=" py-6 ml-6">
       
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6 ml-6"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6 "
         data-aos="fade-up"
         data-aos-anchor-placement="bottom-bottom"
       >
