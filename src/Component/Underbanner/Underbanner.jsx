@@ -16,7 +16,7 @@ function Underbanner() {
   }, []);
 
   return (
-    <div className="relative w-full h-[550px] my-10 overflow-hidden  gap-20">
+    <div className="relative w-screen h-[350px]  sm:h-[550px] my-10 overflow-hidden  gap-20 ">
       {arr.map((img, index) => (
         <img
           key={index}
