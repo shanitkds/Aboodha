@@ -7,7 +7,7 @@ function ViewOrder() {
 
     return (
         <>
-            {orders.length > 0 ? (<div className="flex flex-wrap gap-6 pt-30  pb-38">
+            {orders.length > 0 ? (<div className="flex flex-wrap gap-6 pt-30  pb-38 h-full">
                 {orders.map((info) => (
                     <div
                         key={info.id}
