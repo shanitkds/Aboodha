@@ -42,8 +42,8 @@ function ProductInfo() {
 
   
   return (
-    <div className=' sm:flex sm:pt-0'>
-      <div className="ml-20 h-[650px] w-[400px] bg-white flex flex-col items-center justify-start gap-6 pt-15 sm:pt-35 sm:h-screen">
+    <div className='pt-20 sm:flex sm:pt-0'>
+      <div className=" h-[650px] w-[400px] bg-white flex flex-col items-center justify-start gap-6 pt-15 sm:pt-35 sm:h-screen">
         {/* Product Image Box */}
         <div className="border-4 border-amber-100 p-3">
           <img
