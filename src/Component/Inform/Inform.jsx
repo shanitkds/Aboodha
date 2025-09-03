@@ -37,12 +37,12 @@ function Inform() {
               placeholder="Enter your email"
               className="flex-1 h-10 px-4 rounded-xl border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-black/30"
             />
-            <button
+            {/* <button
               type="submit"
               className="h-10 px-5 rounded-xl bg-black text-white font-medium hover:opacity-90 active:scale-[0.99] transition"
             >
               Send
-            </button>
+            </button> */}
           </form>
         </div>
       </div>
@@ -70,7 +70,7 @@ function Inform() {
             style={{ backgroundImage: `url(${img3})` }}
             className="relative w-full h-[350px] bg-no-repeat bg-cover bg-top rounded-lg flex items-end justify-center"
           >
-            <button className="mb-6 bg-white text-black px-4 py-2 rounded-lg shadow-md font-semibold hover:bg-black hover:text-white transition-colors duration-300">
+            <button className="mb-6 bg-white text-black px-4 py-2 rounded-lg shadow-md font-semibold hover:bg-black hover:text-white">
               Visit Showroom
             </button>
           </div>

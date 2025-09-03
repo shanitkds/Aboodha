@@ -10,7 +10,7 @@ function RealNav() {
   const [ops, setOps] = useState(false)
 
   return (
-    <div className="bg-[#e2e2f0] fixed top-0 w-full z-50 ">
+    <div className="bg-[#e2e2f0] fixed top-0 w-[100vw] z-50 border-box ">
       <div className="flex items-center justify-between h-[70px] px-5">
 
 
@@ -26,7 +26,7 @@ function RealNav() {
         </div>
 
 
-        <div className="flex items-center gap-5 ml-10 max-sm:hidden">
+        <div className="flex items-center gap-5 max-sm:hidden">
           <div className="flex items-center gap-1 cursor-pointer">
             <CiLogout size={20} />
             <span>Logout</span>
