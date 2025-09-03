@@ -1,5 +1,6 @@
 @import "tailwindcss";
 body{
   background-color:rgba(213, 208, 200, 0.7);
-  box-sizing: ;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }

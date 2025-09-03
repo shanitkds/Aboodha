@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { CiLogout } from "react-icons/ci";
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import logo from '../../../public/logo.png'
 import { CiMenuBurger } from "react-icons/ci";
 
@@ -13,19 +12,33 @@ function RealNav() {
     <div className="bg-[#e2e2f0] fixed top-0 w-[100vw] z-50 border-box ">
       <div className="flex items-center justify-between h-[70px] px-5">
 
-
         <div>
           <img src={logo} alt="Logo" className="w-20" />
         </div>
 
-
+        {/* Desktop Menu */}
         <div className="flex gap-10 font-bold max-sm:hidden">
-          <Link to="/home">HOME</Link>
-          <Link to="/aboutus">ABOUT US</Link>
-          <Link to="/contactus">CONTACT US</Link>
+          <a 
+            href="/home" 
+            className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
+          >
+            HOME
+          </a>
+          <a 
+            href="/aboutus" 
+            className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
+          >
+            ABOUT US
+          </a>
+          <a 
+            href="/contactus" 
+            className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
+          >
+            CONTACT US
+          </a>
         </div>
 
-
+        {/* Buttons + Logout */}
         <div className="flex items-center gap-5 max-sm:hidden">
           <div className="flex items-center gap-1 cursor-pointer">
             <CiLogout size={20} />
@@ -47,47 +60,45 @@ function RealNav() {
           </div>
         </div>
 
-
+        {/* Mobile Menu Icon */}
         <div className="sm:hidden"
           onClick={() => setOps(!ops)}
         >
           <CiMenuBurger size={28} />
         </div>
       </div>
-      {
-  ops && (
-    <div className="absolute top-16 right-4 w-48 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-xl shadow-xl overflow-hidden animate-slideDown">
-      <ul className="flex flex-col divide-y divide-amber-500/30">
-        <li>
-          <Link
-            to="/home"
-            className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
-          >
-            HOME
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/aboutus"
-            className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
-          >
-            ABOUT US
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contactus"
-            className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
-          >
-            CONTACT US
-          </Link>
-        </li>
-      </ul>
-    </div>
-  )
-}
 
-
+      {/* Mobile Dropdown */}
+      {ops && (
+        <div className="absolute top-16 right-4 w-48 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-xl shadow-xl overflow-hidden animate-slideDown">
+          <ul className="flex flex-col divide-y divide-amber-500/30">
+            <li>
+              <a 
+                href="/home" 
+                className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
+              >
+                HOME
+              </a>
+            </li>
+            <li>
+              <a 
+                href="/aboutus" 
+                className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
+              >
+                ABOUT US
+              </a>
+            </li>
+            <li>
+              <a 
+                href="/contactus" 
+                className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
+              >
+                CONTACT US
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   )
 }
