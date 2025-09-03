@@ -8,12 +8,12 @@ function BannerCart({ img, category }) {
         <div>
             <div
                 style={{ backgroundImage: `url(${img})` }}
-                className="w-[100%] max-sm:w-[200px] max-sm:h-[200px] h-100 bg-no-repeat bg-cover bg-top border-15 border-white shadow-lg rounded-lg flex flex-col items-center justify-end p-4"
+                className="w-[100%] max-sm:w-[160px] max-sm:h-[200px] h-100 bg-no-repeat bg-cover bg-top border-15 border-white shadow-lg rounded-lg flex flex-col items-center justify-end p-4"
             >
                 <p className="text-white font-semibold bg-black/50 px-2 rounded mb-2">
                     {category}
                 </p>
-                <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded" onClick={()=>navigate(`/products/${category}`)}>
+                <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded max-sm:text-sm" onClick={()=>navigate(`/products/${category}`)}>
                     Shop Now
                 </button>
             </div>

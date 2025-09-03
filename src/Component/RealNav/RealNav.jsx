@@ -29,7 +29,7 @@ function RealNav() {
         <div className="flex items-center gap-5 max-sm:hidden">
           <div className="flex items-center gap-1 cursor-pointer">
             <CiLogout size={20} />
-            <span>Logout</span>
+            Logout
           </div>
           <div className="flex gap-3">
             <button
