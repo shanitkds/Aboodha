@@ -3,4 +3,5 @@ body{
   background-color:rgba(213, 208, 200, 0.7);
   box-sizing: border-box;
   overflow-x: hidden;
+  scrollbar-width: none;
 }
