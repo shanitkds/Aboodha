@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { CiLogout } from "react-icons/ci";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import logo from '../../../public/logo.png'
+import logo from '/public/logo.png'
 import { CiMenuBurger } from "react-icons/ci";
 
 function RealNav() {
