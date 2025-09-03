@@ -20,16 +20,9 @@ function RealNav() {
 
 
         <div className="flex gap-10 font-bold max-sm:hidden">
-         <a href="/home" className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300">
-  HOME
-</a>
-<a href="/aboutus" className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300">
-  ABOUT US
-</a>
-<a href="/contactus" className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300">
-  CONTACT US
-</a>
-
+          <Link to="/home">HOME</Link>
+          <Link to="/aboutus">ABOUT US</Link>
+          <Link to="/contactus">CONTACT US</Link>
         </div>
 
 
