@@ -48,7 +48,6 @@ function Inform() {
       </div>
 
     <div className='flex-1 '>
-        SHOWROOM
         <div className="text-center mt-10 " data-aos="fade-down-left">
           <h1 className="font-medium text-4xl">SHOWROOM</h1>
           <p className="pt-2 pb-2">Crafting Outfits, Creating Confidence</p>
