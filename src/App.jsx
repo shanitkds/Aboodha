@@ -31,8 +31,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/products/:type" element={<ProdutPage/>} />
           <Route path="/ProductInfoPage/:id" element={<ProductInfoPage/>} />
           <Route path="/cartPage" element={<CartPage/>} />

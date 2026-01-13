@@ -28,7 +28,7 @@ function RealNav() {
 
         <div className="flex items-center gap-5 max-sm:hidden">
           <div className="flex items-center gap-1 cursor-pointer">
-            <CiLogout size={20} />
+            <CiLogout size={20} onClick={()=>navigation('/login')} />
             Logout
           </div>
           <div className="flex gap-3">
@@ -60,7 +60,7 @@ function RealNav() {
       <ul className="flex flex-col divide-y divide-amber-500/30">
         <li>
           <Link
-            to="/home"
+            to="/"
             className="block px-5 py-3 hover:bg-amber-500 hover:text-black transition-all duration-300"
           >
             HOME

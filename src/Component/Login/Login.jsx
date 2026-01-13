@@ -10,7 +10,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault(); // stop form reload
     console.log("Login Info:", { email, password });
-    navigation("/home");
+    navigation("/");
   };
 
   return (
