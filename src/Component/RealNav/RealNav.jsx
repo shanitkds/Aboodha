@@ -20,7 +20,7 @@ function RealNav() {
 
 
         <div className="flex gap-10 font-bold max-sm:hidden">
-          <Link to="/home">HOME</Link>
+          <Link to="/">HOME</Link>
           <Link to="/aboutus">ABOUT US</Link>
           <Link to="/contactus">CONTACT US</Link>
         </div>
